@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A7C0F152ADA79770082AF4A /* FlipClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F142ADA79770082AF4A /* FlipClockView.m */; };
+		0A7C0F182ADA798C0082AF4A /* FlipClockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F172ADA798C0082AF4A /* FlipClockItemView.m */; };
+		0A7C0F1B2ADA7FAC0082AF4A /* FlipClockSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F1A2ADA7FAC0082AF4A /* FlipClockSectionView.m */; };
+		0AA449EC2AD665200018DB93 /* KKClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA449EB2AD665200018DB93 /* KKClockView.m */; };
+		0AA449F12AD669660018DB93 /* KKSkinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA449F02AD669660018DB93 /* KKSkinView.m */; };
+		0AA8EE302AD7D2190061C0CF /* KKClockContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8EE2F2AD7D2190061C0CF /* KKClockContentView.m */; };
+		0AA8EE332AD7D4190061C0CF /* KKClockCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8EE322AD7D4190061C0CF /* KKClockCollectionViewCell.m */; };
+		0AC45E302AD4269900E9C3E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */; };
+		0AC45E362AD4269900E9C3E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45E352AD4269900E9C3E9 /* ViewController.m */; };
+		0AC45E392AD4269900E9C3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC45E372AD4269900E9C3E9 /* Main.storyboard */; };
+		0AC45E3B2AD4269B00E9C3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */; };
+		0AC45E3E2AD4269B00E9C3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */; };
+		0AC45E412AD4269B00E9C3E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45E402AD4269B00E9C3E9 /* main.m */; };
+		0AC45E492AD4E84400E9C3E9 /* TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45E472AD4E84400E9C3E9 /* TimeView.m */; };
+		0AFDD9F72ADD43BC007392FC /* FlipClockItemContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDD9F62ADD43BC007392FC /* FlipClockItemContentView.m */; };
+		53292AEB90F423E034D6DF5D /* Pods_KongClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96609AD4204A15AA1B6ECBE1 /* Pods_KongClock.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A7C0F132ADA79770082AF4A /* FlipClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockView.h; sourceTree = "<group>"; };
+		0A7C0F142ADA79770082AF4A /* FlipClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockView.m; sourceTree = "<group>"; };
+		0A7C0F162ADA798C0082AF4A /* FlipClockItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockItemView.h; sourceTree = "<group>"; };
+		0A7C0F172ADA798C0082AF4A /* FlipClockItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockItemView.m; sourceTree = "<group>"; };
+		0A7C0F192ADA7FAC0082AF4A /* FlipClockSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockSectionView.h; sourceTree = "<group>"; };
+		0A7C0F1A2ADA7FAC0082AF4A /* FlipClockSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockSectionView.m; sourceTree = "<group>"; };
+		0AA449EA2AD665200018DB93 /* KKClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKClockView.h; sourceTree = "<group>"; };
+		0AA449EB2AD665200018DB93 /* KKClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKClockView.m; sourceTree = "<group>"; };
+		0AA449EF2AD669660018DB93 /* KKSkinView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSkinView.h; sourceTree = "<group>"; };
+		0AA449F02AD669660018DB93 /* KKSkinView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSkinView.m; sourceTree = "<group>"; };
+		0AA8EE2E2AD7D2190061C0CF /* KKClockContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKClockContentView.h; sourceTree = "<group>"; };
+		0AA8EE2F2AD7D2190061C0CF /* KKClockContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKClockContentView.m; sourceTree = "<group>"; };
+		0AA8EE312AD7D4190061C0CF /* KKClockCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKClockCollectionViewCell.h; sourceTree = "<group>"; };
+		0AA8EE322AD7D4190061C0CF /* KKClockCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKClockCollectionViewCell.m; sourceTree = "<group>"; };
+		0AC45E2B2AD4269900E9C3E9 /* KongClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KongClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC45E2E2AD4269900E9C3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AC45E342AD4269900E9C3E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0AC45E352AD4269900E9C3E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0AC45E382AD4269900E9C3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AC45E3D2AD4269B00E9C3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AC45E3F2AD4269B00E9C3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC45E402AD4269B00E9C3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AC45E472AD4E84400E9C3E9 /* TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeView.m; sourceTree = "<group>"; };
+		0AC45E482AD4E84400E9C3E9 /* TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeView.h; sourceTree = "<group>"; };
+		0AFDD9F52ADD43BC007392FC /* FlipClockItemContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockItemContentView.h; sourceTree = "<group>"; };
+		0AFDD9F62ADD43BC007392FC /* FlipClockItemContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockItemContentView.m; sourceTree = "<group>"; };
+		6F5D1990FEB31AE745CC8DA4 /* Pods-KongClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KongClock.release.xcconfig"; path = "Target Support Files/Pods-KongClock/Pods-KongClock.release.xcconfig"; sourceTree = "<group>"; };
+		96609AD4204A15AA1B6ECBE1 /* Pods_KongClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KongClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF9208B26C54FA073CA519C /* Pods-KongClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KongClock.debug.xcconfig"; path = "Target Support Files/Pods-KongClock/Pods-KongClock.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AC45E282AD4269900E9C3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53292AEB90F423E034D6DF5D /* Pods_KongClock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A7C0F122ADA794E0082AF4A /* FlipClock */ = {
+			isa = PBXGroup;
+			children = (
+				0A7C0F132ADA79770082AF4A /* FlipClockView.h */,
+				0A7C0F142ADA79770082AF4A /* FlipClockView.m */,
+				0A7C0F192ADA7FAC0082AF4A /* FlipClockSectionView.h */,
+				0A7C0F1A2ADA7FAC0082AF4A /* FlipClockSectionView.m */,
+				0A7C0F162ADA798C0082AF4A /* FlipClockItemView.h */,
+				0A7C0F172ADA798C0082AF4A /* FlipClockItemView.m */,
+				0AFDD9F52ADD43BC007392FC /* FlipClockItemContentView.h */,
+				0AFDD9F62ADD43BC007392FC /* FlipClockItemContentView.m */,
+			);
+			path = FlipClock;
+			sourceTree = "<group>";
+		};
+		0AA449ED2AD665260018DB93 /* ClockView */ = {
+			isa = PBXGroup;
+			children = (
+				0AA449EA2AD665200018DB93 /* KKClockView.h */,
+				0AA449EB2AD665200018DB93 /* KKClockView.m */,
+				0AC45E482AD4E84400E9C3E9 /* TimeView.h */,
+				0AC45E472AD4E84400E9C3E9 /* TimeView.m */,
+				0AA8EE2E2AD7D2190061C0CF /* KKClockContentView.h */,
+				0AA8EE2F2AD7D2190061C0CF /* KKClockContentView.m */,
+				0AA8EE312AD7D4190061C0CF /* KKClockCollectionViewCell.h */,
+				0AA8EE322AD7D4190061C0CF /* KKClockCollectionViewCell.m */,
+			);
+			path = ClockView;
+			sourceTree = "<group>";
+		};
+		0AA8EE342AD7D45A0061C0CF /* ClockSkin */ = {
+			isa = PBXGroup;
+			children = (
+				0AA449EF2AD669660018DB93 /* KKSkinView.h */,
+				0AA449F02AD669660018DB93 /* KKSkinView.m */,
+			);
+			path = ClockSkin;
+			sourceTree = "<group>";
+		};
+		0AC45E222AD4269900E9C3E9 = {
+			isa = PBXGroup;
+			children = (
+				0AC45E2D2AD4269900E9C3E9 /* KongClock */,
+				0AC45E2C2AD4269900E9C3E9 /* Products */,
+				B30775870912584D592D866E /* Pods */,
+				D205518E5D4EDBB1B6ADFBDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AC45E2C2AD4269900E9C3E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AC45E2B2AD4269900E9C3E9 /* KongClock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AC45E2D2AD4269900E9C3E9 /* KongClock */ = {
+			isa = PBXGroup;
+			children = (
+				0A7C0F122ADA794E0082AF4A /* FlipClock */,
+				0AA8EE342AD7D45A0061C0CF /* ClockSkin */,
+				0AA449ED2AD665260018DB93 /* ClockView */,
+				0AC45E2E2AD4269900E9C3E9 /* AppDelegate.h */,
+				0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */,
+				0AC45E342AD4269900E9C3E9 /* ViewController.h */,
+				0AC45E352AD4269900E9C3E9 /* ViewController.m */,
+				0AC45E372AD4269900E9C3E9 /* Main.storyboard */,
+				0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */,
+				0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */,
+				0AC45E3F2AD4269B00E9C3E9 /* Info.plist */,
+				0AC45E402AD4269B00E9C3E9 /* main.m */,
+			);
+			path = KongClock;
+			sourceTree = "<group>";
+		};
+		B30775870912584D592D866E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEF9208B26C54FA073CA519C /* Pods-KongClock.debug.xcconfig */,
+				6F5D1990FEB31AE745CC8DA4 /* Pods-KongClock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D205518E5D4EDBB1B6ADFBDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96609AD4204A15AA1B6ECBE1 /* Pods_KongClock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AC45E2A2AD4269900E9C3E9 /* KongClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC45E442AD4269B00E9C3E9 /* Build configuration list for PBXNativeTarget "KongClock" */;
+			buildPhases = (
+				546F6ACF72F2F396B3DDBAB0 /* [CP] Check Pods Manifest.lock */,
+				0AC45E272AD4269900E9C3E9 /* Sources */,
+				0AC45E282AD4269900E9C3E9 /* Frameworks */,
+				0AC45E292AD4269900E9C3E9 /* Resources */,
+				47309C678EC720BEFA58335C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KongClock;
+			productName = KongClock;
+			productReference = 0AC45E2B2AD4269900E9C3E9 /* KongClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AC45E232AD4269900E9C3E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0AC45E2A2AD4269900E9C3E9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 0AC45E262AD4269900E9C3E9 /* Build configuration list for PBXProject "KongClock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AC45E222AD4269900E9C3E9;
+			productRefGroup = 0AC45E2C2AD4269900E9C3E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AC45E2A2AD4269900E9C3E9 /* KongClock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AC45E292AD4269900E9C3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC45E3E2AD4269B00E9C3E9 /* LaunchScreen.storyboard in Resources */,
+				0AC45E3B2AD4269B00E9C3E9 /* Assets.xcassets in Resources */,
+				0AC45E392AD4269900E9C3E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47309C678EC720BEFA58335C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KongClock/Pods-KongClock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KongClock/Pods-KongClock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KongClock/Pods-KongClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		546F6ACF72F2F396B3DDBAB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KongClock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AC45E272AD4269900E9C3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7C0F182ADA798C0082AF4A /* FlipClockItemView.m in Sources */,
+				0AA8EE302AD7D2190061C0CF /* KKClockContentView.m in Sources */,
+				0AC45E362AD4269900E9C3E9 /* ViewController.m in Sources */,
+				0A7C0F152ADA79770082AF4A /* FlipClockView.m in Sources */,
+				0AC45E302AD4269900E9C3E9 /* AppDelegate.m in Sources */,
+				0AFDD9F72ADD43BC007392FC /* FlipClockItemContentView.m in Sources */,
+				0AC45E412AD4269B00E9C3E9 /* main.m in Sources */,
+				0AA449EC2AD665200018DB93 /* KKClockView.m in Sources */,
+				0AC45E492AD4E84400E9C3E9 /* TimeView.m in Sources */,
+				0AA449F12AD669660018DB93 /* KKSkinView.m in Sources */,
+				0AA8EE332AD7D4190061C0CF /* KKClockCollectionViewCell.m in Sources */,
+				0A7C0F1B2ADA7FAC0082AF4A /* FlipClockSectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AC45E372AD4269900E9C3E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AC45E382AD4269900E9C3E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AC45E3D2AD4269B00E9C3E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AC45E422AD4269B00E9C3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AC45E432AD4269B00E9C3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AC45E452AD4269B00E9C3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF9208B26C54FA073CA519C /* Pods-KongClock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDSTX9CCK2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KongClock/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongClock.www.KongClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AC45E462AD4269B00E9C3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5D1990FEB31AE745CC8DA4 /* Pods-KongClock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDSTX9CCK2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KongClock/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongClock.www.KongClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AC45E262AD4269900E9C3E9 /* Build configuration list for PBXProject "KongClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC45E422AD4269B00E9C3E9 /* Debug */,
+				0AC45E432AD4269B00E9C3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC45E442AD4269B00E9C3E9 /* Build configuration list for PBXNativeTarget "KongClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC45E452AD4269B00E9C3E9 /* Debug */,
+				0AC45E462AD4269B00E9C3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AC45E232AD4269900E9C3E9 /* Project object */;
+}
