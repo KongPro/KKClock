@@ -9,11 +9,10 @@
 #import "Masonry.h"
 #import "KKClockView.h"
 #import "FlipClockView.h"
+#import "HalfTransparentLabel.h"
 
-#import "CoreBluetooth/CBCentralManager.h"
 
-
-@interface ViewController () //<CBCentralManagerDelegate>
+@interface ViewController ()
 
 @property (nonatomic, strong)KKClockView *clockView;
 
@@ -39,37 +38,30 @@
         make.bottom.equalTo(self.view).offset(-80);
         make.leading.trailing.equalTo(self.view);
     }];
-    
+
     self.view.backgroundColor = [UIColor colorWithRed:240/255.f green:255/255.f blue:255/255.f alpha:1];
     
-//    [[CBCentralManager alloc] initWithDelegate:self queue:nil options:@{CBCentralManagerOptionShowPowerAlertKey : }];
-//    CBCentralManager *centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
-//    [centralManager scanForPeripheralsWithServices:nil options:nil];
+    UIView *v = [[UIView alloc] init];
+    [self.view addSubview:v];
     
-//    UIView *greenView = [[UIView alloc] init];
-//    greenView.backgroundColor = [UIColor greenColor];
-//    [self.view addSubview:greenView];
-//    [greenView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(self.view);
-//        make.size.mas_equalTo(CGSizeMake(100, 100));
+    [v mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+        make.center.equalTo(self.view);
+    }];
+    v.backgroundColor = [UIColor redColor];
+    
+    CATransform3D t = CATransform3DIdentity;
+    t.m34 = -1.0/1000.0;
+    t = CATransform3DRotate(t, M_PI * 0.4, -1, 0, 0);
+    v.layer.transform = t;
+    
+//    HalfTransparentLabel *lbl = [[HalfTransparentLabel alloc] initWithFrame:CGRectMake(0, 0, 90, 128) type:FlipLabelShowType_Half_Bottom];
+//    [self.view addSubview:lbl];
+//    [lbl mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(90, 128));
+//        make.center.equalTo(self.view);
 //    }];
-    
-//    
-//    UIView *redView = [[UIView alloc] init];
-//    redView.backgroundColor = [UIColor colorWithRed:238 green:0 blue:0 alpha:0.5];
-//    [self.view addSubview:redView];
-//    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(self.view);
-//        make.size.mas_equalTo(CGSizeMake(100, 100));
-//    }];
-    
-    
-    
-//    CATransform3D t = CATransform3DIdentity;
-//    t.m34 = -1.0/500.0;
-//    t = CATransform3DRotate(t, M_PI*0.4, -1, 0, 0);
-//    redView.layer.transform = t;
-//    redView.layer.speed = 1;
+//    lbl.text = @"2";
     
 //    [self.view addSubview:self.clockView];
 //    [self.clockView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -86,16 +78,6 @@
 //    [self.clockView addGestureRecognizer:swipeDown];
     
 }
-
-//- (void)centralManagerDidUpdateState:(CBCentralManager *)central {
-//    if (central.state == CBManagerStatePoweredOn) {
-//        // 中心管理器已准备好，可以开始扫描设备等操作
-//        NSLog(@"on");
-//    } else {
-//        NSLog(@"on");
-//        // 中心管理器不可用，处理相应的情况
-//    }
-//}
 
 #pragma - Timer
 - (void)setUpTime {

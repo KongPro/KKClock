@@ -21,7 +21,7 @@
 		0AC45E3E2AD4269B00E9C3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */; };
 		0AC45E412AD4269B00E9C3E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45E402AD4269B00E9C3E9 /* main.m */; };
 		0AC45E492AD4E84400E9C3E9 /* TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45E472AD4E84400E9C3E9 /* TimeView.m */; };
-		0AFDD9F72ADD43BC007392FC /* FlipClockItemContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDD9F62ADD43BC007392FC /* FlipClockItemContentView.m */; };
+		0AC7AC1C2B4E428900B48A02 /* HalfTransparentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7AC1B2B4E428900B48A02 /* HalfTransparentLabel.m */; };
 		53292AEB90F423E034D6DF5D /* Pods_KongClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96609AD4204A15AA1B6ECBE1 /* Pods_KongClock.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		0AC45E402AD4269B00E9C3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AC45E472AD4E84400E9C3E9 /* TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeView.m; sourceTree = "<group>"; };
 		0AC45E482AD4E84400E9C3E9 /* TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeView.h; sourceTree = "<group>"; };
-		0AFDD9F52ADD43BC007392FC /* FlipClockItemContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockItemContentView.h; sourceTree = "<group>"; };
-		0AFDD9F62ADD43BC007392FC /* FlipClockItemContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockItemContentView.m; sourceTree = "<group>"; };
+		0AC7AC1A2B4E428900B48A02 /* HalfTransparentLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfTransparentLabel.h; sourceTree = "<group>"; };
+		0AC7AC1B2B4E428900B48A02 /* HalfTransparentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfTransparentLabel.m; sourceTree = "<group>"; };
 		6F5D1990FEB31AE745CC8DA4 /* Pods-KongClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KongClock.release.xcconfig"; path = "Target Support Files/Pods-KongClock/Pods-KongClock.release.xcconfig"; sourceTree = "<group>"; };
 		96609AD4204A15AA1B6ECBE1 /* Pods_KongClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KongClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF9208B26C54FA073CA519C /* Pods-KongClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KongClock.debug.xcconfig"; path = "Target Support Files/Pods-KongClock/Pods-KongClock.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 				0A7C0F1A2ADA7FAC0082AF4A /* FlipClockSectionView.m */,
 				0A7C0F162ADA798C0082AF4A /* FlipClockItemView.h */,
 				0A7C0F172ADA798C0082AF4A /* FlipClockItemView.m */,
-				0AFDD9F52ADD43BC007392FC /* FlipClockItemContentView.h */,
-				0AFDD9F62ADD43BC007392FC /* FlipClockItemContentView.m */,
+				0AC7AC1A2B4E428900B48A02 /* HalfTransparentLabel.h */,
+				0AC7AC1B2B4E428900B48A02 /* HalfTransparentLabel.m */,
 			);
 			path = FlipClock;
 			sourceTree = "<group>";
@@ -283,13 +283,13 @@
 				0AC45E362AD4269900E9C3E9 /* ViewController.m in Sources */,
 				0A7C0F152ADA79770082AF4A /* FlipClockView.m in Sources */,
 				0AC45E302AD4269900E9C3E9 /* AppDelegate.m in Sources */,
-				0AFDD9F72ADD43BC007392FC /* FlipClockItemContentView.m in Sources */,
 				0AC45E412AD4269B00E9C3E9 /* main.m in Sources */,
 				0AA449EC2AD665200018DB93 /* KKClockView.m in Sources */,
 				0AC45E492AD4E84400E9C3E9 /* TimeView.m in Sources */,
 				0AA449F12AD669660018DB93 /* KKSkinView.m in Sources */,
 				0AA8EE332AD7D4190061C0CF /* KKClockCollectionViewCell.m in Sources */,
 				0A7C0F1B2ADA7FAC0082AF4A /* FlipClockSectionView.m in Sources */,
+				0AC7AC1C2B4E428900B48A02 /* HalfTransparentLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,18 +35,18 @@
     
     CGFloat margin = 55;
     CGFloat h = ([UIScreen mainScreen].bounds.size.height - (240 + margin + margin)) / 3;
-//    [self.minSection mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.equalTo(self);
-//        make.leading.trailing.equalTo(self);
-//        make.height.equalTo(@(h));
-//    }];
+    [self.minSection mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self);
+        make.leading.trailing.equalTo(self);
+        make.height.equalTo(@(h));
+    }];
     
-//    [self.hourSection mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.trailing.equalTo(self);
-//        make.bottom.equalTo(self.minSection.mas_top).offset(-margin);
-//        make.height.equalTo(@(h));
-//    }];
-//    
+    [self.hourSection mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.equalTo(self);
+        make.bottom.equalTo(self.minSection.mas_top).offset(-margin);
+        make.height.equalTo(@(h));
+    }];
+    
     [self.secSection mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.minSection.mas_bottom).offset(margin);
         make.leading.trailing.equalTo(self);
