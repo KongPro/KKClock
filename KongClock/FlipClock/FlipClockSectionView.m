@@ -16,13 +16,15 @@
 @property(nonatomic, strong)FlipClockItemView *itemLeft;
 @property(nonatomic, strong)FlipClockItemView *itemRight;
 @property (nonatomic, strong) UIView *lineView;
+@property (nonatomic, strong) UIColor *color;
 
 @end
 
 @implementation FlipClockSectionView
 
-- (instancetype)initWithFrame:(CGRect)frame{
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color {
     if (self = [super initWithFrame:frame]) {
+        self.color = color;
         [self setUpUI];
     }
     return self;
@@ -35,15 +37,14 @@
     [self addSubview:self.itemRight];
     [self addSubview:self.lineView];
     
+    [self.holderViewLeft mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.itemLeft);
+    }];
     
     [self.itemLeft mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.equalTo(self);
         make.trailing.equalTo(self.mas_centerX).offset(-6);
         make.width.equalTo(@(90));
-    }];
-    
-    [self.holderViewLeft mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.itemLeft);
     }];
     
     [self.itemRight mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -64,18 +65,23 @@
 
 - (void)configureFlipClockItem {
     self.holderViewLeft.layer.cornerRadius = 5;
-//    self.holderViewLeft.layer.masksToBounds = YES;
+//    layer.shadowColor = [UIColor colorWithRed:240/255.f green:240/255.f blue:240/255.f alpha:1].CGColor;
+//    self.holderViewLeft.layer.shadowColor = [UIColor systemRedColor].CGColor;
+//    self.holderViewLeft.layer.shadowOffset = CGSizeMake(5, 5);
+//    self.holderViewLeft.layer.shadowRadius = 5;
+//    self.holderViewLeft.layer.shadowOpacity = 0.7;
     [self drawShadowLayer];
 }
 
 - (void)drawShadowLayer {
-    CALayer *layer = [CALayer layer];
+    CALayer *layer = [[CALayer alloc] initWithLayer:self.holderViewLeft.layer];
     CGFloat margin = 55;
     CGFloat h = ([UIScreen mainScreen].bounds.size.height - (240 + margin + margin)) / 3;
     layer.frame = CGRectMake(0, 0, 90, h);
     layer.cornerRadius = 5;
     layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 90, h) cornerRadius:5].CGPath;
     layer.shadowColor = [UIColor colorWithRed:240/255.f green:240/255.f blue:240/255.f alpha:1].CGColor;
+//    layer.shadowColor = [UIColor systemRedColor].CGColor;
     layer.shadowOffset = CGSizeMake(0, 5);
     layer.shadowRadius = 5;
     layer.shadowOpacity = 0.7;
@@ -87,9 +93,7 @@
     [self.itemRight updateContentWithNumber:number2 shoudlAnim:YES];
 }
 
-#pragma -Lazy
-
-
+#pragma mark - Lazy
 - (UIView *)holderViewLeft {
     if (!_holderViewLeft) {
         _holderViewLeft = [[UIView alloc] init];
@@ -100,14 +104,14 @@
 
 - (FlipClockItemView *)itemLeft {
     if (!_itemLeft) {
-        _itemLeft = [[FlipClockItemView alloc] initWithFrame:CGRectZero];
+        _itemLeft = [[FlipClockItemView alloc] initWithFrame:CGRectZero color:self.color];
     }
     return _itemLeft;
 }
 
 - (FlipClockItemView *)itemRight {
     if (!_itemRight) {
-        _itemRight = [[FlipClockItemView alloc] initWithFrame:CGRectZero];
+        _itemRight = [[FlipClockItemView alloc] initWithFrame:CGRectZero color:self.color];
     }
     return _itemRight;
 }

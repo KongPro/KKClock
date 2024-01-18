@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FlipClockItemView : UIView
 
-
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color;
 - (void)updateContentWithNumber:(NSInteger)number shoudlAnim:(BOOL)anim;
 
 @end

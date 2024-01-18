@@ -14,13 +14,17 @@
 @property (nonatomic, strong)FlipClockSectionView *hourSection;
 @property (nonatomic, strong)FlipClockSectionView *minSection;
 @property (nonatomic, strong)FlipClockSectionView *secSection;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, strong) UIColor *bgColor;
 
 @end
 
 @implementation FlipClockView
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor{
     if (self = [super initWithFrame:frame]) {
+        self.color = color;
+        self.bgColor = bgColor;
         [self setUpUI];
         [self registerForNotification];
     }
@@ -32,6 +36,7 @@
     [self addSubview:self.hourSection];
     [self addSubview:self.minSection];
     [self addSubview:self.secSection];
+    self.backgroundColor = self.bgColor;
     
     CGFloat margin = 55;
     CGFloat h = ([UIScreen mainScreen].bounds.size.height - (240 + margin + margin)) / 3;
@@ -73,21 +78,21 @@
 #pragma - Lazy
 - (FlipClockSectionView *)hourSection {
     if (!_hourSection) {
-        _hourSection = [[FlipClockSectionView alloc] initWithFrame:CGRectZero];
+        _hourSection = [[FlipClockSectionView alloc] initWithFrame:CGRectZero color:self.color];
     }
     return _hourSection;
 }
 
 - (FlipClockSectionView *)minSection {
     if (!_minSection) {
-        _minSection = [[FlipClockSectionView alloc] initWithFrame:CGRectZero];
+        _minSection = [[FlipClockSectionView alloc] initWithFrame:CGRectZero color:self.color];
     }
     return _minSection;
 }
 
 - (FlipClockSectionView *)secSection {
     if (!_secSection) {
-        _secSection = [[FlipClockSectionView alloc] initWithFrame:CGRectZero];
+        _secSection = [[FlipClockSectionView alloc] initWithFrame:CGRectZero color:self.color];
     }
     return _secSection;
 }

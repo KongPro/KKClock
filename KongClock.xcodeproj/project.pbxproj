@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A486F7C2B500E080009F52F /* LXMLyricsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F7A2B500E080009F52F /* LXMLyricsLabel.m */; };
+		0A486F852B5121360009F52F /* JXTSlideClipLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F842B5121360009F52F /* JXTSlideClipLabel.m */; };
+		0A486F8D2B5153E20009F52F /* KBannerViewFollow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F892B5153E20009F52F /* KBannerViewFollow.m */; };
+		0A486F8E2B5153E20009F52F /* SConentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F8A2B5153E20009F52F /* SConentView.m */; };
 		0A7C0F152ADA79770082AF4A /* FlipClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F142ADA79770082AF4A /* FlipClockView.m */; };
 		0A7C0F182ADA798C0082AF4A /* FlipClockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F172ADA798C0082AF4A /* FlipClockItemView.m */; };
 		0A7C0F1B2ADA7FAC0082AF4A /* FlipClockSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F1A2ADA7FAC0082AF4A /* FlipClockSectionView.m */; };
@@ -26,6 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A486F7A2B500E080009F52F /* LXMLyricsLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMLyricsLabel.m; sourceTree = "<group>"; };
+		0A486F7B2B500E080009F52F /* LXMLyricsLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMLyricsLabel.h; sourceTree = "<group>"; };
+		0A486F832B5121360009F52F /* JXTSlideClipLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTSlideClipLabel.h; sourceTree = "<group>"; };
+		0A486F842B5121360009F52F /* JXTSlideClipLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTSlideClipLabel.m; sourceTree = "<group>"; };
+		0A486F892B5153E20009F52F /* KBannerViewFollow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBannerViewFollow.m; sourceTree = "<group>"; };
+		0A486F8A2B5153E20009F52F /* SConentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SConentView.m; sourceTree = "<group>"; };
+		0A486F8B2B5153E20009F52F /* KBannerViewFollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBannerViewFollow.h; sourceTree = "<group>"; };
+		0A486F8C2B5153E20009F52F /* SConentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SConentView.h; sourceTree = "<group>"; };
 		0A7C0F132ADA79770082AF4A /* FlipClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockView.h; sourceTree = "<group>"; };
 		0A7C0F142ADA79770082AF4A /* FlipClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockView.m; sourceTree = "<group>"; };
 		0A7C0F162ADA798C0082AF4A /* FlipClockItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockItemView.h; sourceTree = "<group>"; };
@@ -71,6 +83,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A486F862B514B0C0009F52F /* OtherTest */ = {
+			isa = PBXGroup;
+			children = (
+				0A486F832B5121360009F52F /* JXTSlideClipLabel.h */,
+				0A486F842B5121360009F52F /* JXTSlideClipLabel.m */,
+				0A486F7B2B500E080009F52F /* LXMLyricsLabel.h */,
+				0A486F7A2B500E080009F52F /* LXMLyricsLabel.m */,
+			);
+			path = OtherTest;
+			sourceTree = "<group>";
+		};
+		0A486F872B51514A0009F52F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0AC45E2E2AD4269900E9C3E9 /* AppDelegate.h */,
+				0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */,
+				0AC45E342AD4269900E9C3E9 /* ViewController.h */,
+				0AC45E352AD4269900E9C3E9 /* ViewController.m */,
+				0AC45E372AD4269900E9C3E9 /* Main.storyboard */,
+				0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */,
+				0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */,
+				0AC45E3F2AD4269B00E9C3E9 /* Info.plist */,
+				0AC45E402AD4269B00E9C3E9 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0A486F882B5152EE0009F52F /* FlipClockContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0A486F8B2B5153E20009F52F /* KBannerViewFollow.h */,
+				0A486F892B5153E20009F52F /* KBannerViewFollow.m */,
+				0A486F8C2B5153E20009F52F /* SConentView.h */,
+				0A486F8A2B5153E20009F52F /* SConentView.m */,
+			);
+			path = FlipClockContainer;
+			sourceTree = "<group>";
+		};
 		0A7C0F122ADA794E0082AF4A /* FlipClock */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,18 +181,12 @@
 		0AC45E2D2AD4269900E9C3E9 /* KongClock */ = {
 			isa = PBXGroup;
 			children = (
+				0A486F882B5152EE0009F52F /* FlipClockContainer */,
 				0A7C0F122ADA794E0082AF4A /* FlipClock */,
 				0AA8EE342AD7D45A0061C0CF /* ClockSkin */,
 				0AA449ED2AD665260018DB93 /* ClockView */,
-				0AC45E2E2AD4269900E9C3E9 /* AppDelegate.h */,
-				0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */,
-				0AC45E342AD4269900E9C3E9 /* ViewController.h */,
-				0AC45E352AD4269900E9C3E9 /* ViewController.m */,
-				0AC45E372AD4269900E9C3E9 /* Main.storyboard */,
-				0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */,
-				0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */,
-				0AC45E3F2AD4269B00E9C3E9 /* Info.plist */,
-				0AC45E402AD4269B00E9C3E9 /* main.m */,
+				0A486F872B51514A0009F52F /* Other */,
+				0A486F862B514B0C0009F52F /* OtherTest */,
 			);
 			path = KongClock;
 			sourceTree = "<group>";
@@ -278,16 +322,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A486F8D2B5153E20009F52F /* KBannerViewFollow.m in Sources */,
 				0A7C0F182ADA798C0082AF4A /* FlipClockItemView.m in Sources */,
 				0AA8EE302AD7D2190061C0CF /* KKClockContentView.m in Sources */,
 				0AC45E362AD4269900E9C3E9 /* ViewController.m in Sources */,
 				0A7C0F152ADA79770082AF4A /* FlipClockView.m in Sources */,
+				0A486F7C2B500E080009F52F /* LXMLyricsLabel.m in Sources */,
+				0A486F852B5121360009F52F /* JXTSlideClipLabel.m in Sources */,
 				0AC45E302AD4269900E9C3E9 /* AppDelegate.m in Sources */,
 				0AC45E412AD4269B00E9C3E9 /* main.m in Sources */,
 				0AA449EC2AD665200018DB93 /* KKClockView.m in Sources */,
 				0AC45E492AD4E84400E9C3E9 /* TimeView.m in Sources */,
 				0AA449F12AD669660018DB93 /* KKSkinView.m in Sources */,
 				0AA8EE332AD7D4190061C0CF /* KKClockCollectionViewCell.m in Sources */,
+				0A486F8E2B5153E20009F52F /* SConentView.m in Sources */,
 				0A7C0F1B2ADA7FAC0082AF4A /* FlipClockSectionView.m in Sources */,
 				0AC7AC1C2B4E428900B48A02 /* HalfTransparentLabel.m in Sources */,
 			);
@@ -442,7 +490,7 @@
 				DEVELOPMENT_TEAM = DDSTX9CCK2;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KongClock/Info.plist;
+				INFOPLIST_FILE = KongClock/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,7 +520,7 @@
 				DEVELOPMENT_TEAM = DDSTX9CCK2;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KongClock/Info.plist;
+				INFOPLIST_FILE = KongClock/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
