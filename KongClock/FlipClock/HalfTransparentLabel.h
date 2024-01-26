@@ -17,7 +17,7 @@ typedef enum : NSUInteger {
 
 @interface HalfTransparentLabel : UILabel
 
-- (instancetype)initWithFrame:(CGRect)frame type:(FlipLabelShowType)type color:(UIColor *)color;
+- (instancetype)initWithFrame:(CGRect)frame type:(FlipLabelShowType)type color:(UIColor *)color textColor:(UIColor *)textColor;
 
 @end
 

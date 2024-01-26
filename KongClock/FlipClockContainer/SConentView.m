@@ -20,17 +20,17 @@
 
 @implementation SConentView
 
-- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor{
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor textColor:(UIColor *)textColor {
     if (self == [super initWithFrame:frame]) {
-        [self setContentView:color bgColor:bgColor];
+        [self setContentView:color bgColor:bgColor textColor:textColor];
     }
     return self;
 }
 
-- (void)setContentView:(UIColor *)color bgColor:(UIColor *)bgColor;{
+- (void)setContentView:(UIColor *)color bgColor:(UIColor *)bgColor textColor:(UIColor *)textColor;{
     self.clipsToBounds = YES;
     
-    self.flipClock = [[FlipClockView alloc] initWithFrame:self.bounds color:color bgColor:bgColor];
+    self.flipClock = [[FlipClockView alloc] initWithFrame:self.bounds color:color bgColor:bgColor textColor:textColor];
     [self addSubview:self.flipClock];
 //    self.flipClock.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     

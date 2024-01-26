@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FlipClockView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor;
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor textColor:(UIColor *)textColor;;
 
 @end
 

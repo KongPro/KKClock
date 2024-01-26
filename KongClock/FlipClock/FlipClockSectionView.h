@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FlipClockSectionView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color;
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color textColor:(UIColor *)textColor;;
 - (void)updateTimeWithNumberLeft:(NSInteger)number1 right:(NSInteger)number2;
 
 @end

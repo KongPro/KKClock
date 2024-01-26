@@ -19,13 +19,14 @@
 
 @implementation HalfTransparentLabel
 
-- (instancetype)initWithFrame:(CGRect)frame type:(FlipLabelShowType)type color:(UIColor *)color {
+- (instancetype)initWithFrame:(CGRect)frame type:(FlipLabelShowType)type color:(UIColor *)color textColor:(UIColor *)textColor {
     if (self = [super initWithFrame:frame]) {
         self.type = type;
         self.color = color;
+        self.textColor = textColor;
         self.textAlignment = NSTextAlignmentCenter;
         [self setFont:[UIFont fontWithName:@"AvenirNext-DemiBold" size:100]];
-        [self setTextColor:[UIColor colorWithRed:66/255.f green:66/255.f blue:66/255.f alpha:1]];
+//        [self setTextColor:[UIColor colorWithRed:66/255.f green:66/255.f blue:66/255.f alpha:1]];
     }
     return self;
 }

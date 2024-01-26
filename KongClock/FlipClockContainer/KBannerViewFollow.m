@@ -29,7 +29,8 @@
     // 创建多个图片view
     for (int i = 0; i < 10; i++) {
         UIColor *color = i % 2 ? [UIColor systemRedColor] : [UIColor systemBlueColor];
-        SConentView *sContentView = [[SConentView alloc] initWithFrame:CGRectMake(i * scrollView.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height) color:color bgColor:color];
+        UIColor *textColor = i % 2 ? [UIColor whiteColor] : [UIColor blackColor];
+        SConentView *sContentView = [[SConentView alloc] initWithFrame:CGRectMake(i * scrollView.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height) color:color bgColor:color textColor:textColor];
         if (!imageArray.count) {
             sContentView.backgroundColor = [UIColor lightGrayColor];
         }else{
@@ -47,14 +48,16 @@
     CGFloat contentWidth = count ? self.frame.size.width * count : self.frame.size.width;
     scrollView.contentSize = CGSizeMake(contentWidth, 0);
     scrollView.pagingEnabled = YES;
+    scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView = scrollView;
     
     // 创建多个图片view
     for (int i = 0; i < count; i++) {
         UIColor *color = i % 2 ? [UIColor systemRedColor] : [UIColor systemBlueColor];
+        UIColor *textColor = i % 2 ? [UIColor colorWithRed:66/255.f green:66/255.f blue:66/255.f alpha:1] : [UIColor whiteColor];
         UIColor *bgColor = i % 2 ? [UIColor colorWithRed:238/255.f green:154/255.f blue:0/255.f alpha:1] : [UIColor colorWithRed:176/255.f green:48/255.f blue:96/255.f alpha:1];
 
-        SConentView *sContentView = [[SConentView alloc] initWithFrame:CGRectMake(i * scrollView.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height) color:color bgColor:bgColor];
+        SConentView *sContentView = [[SConentView alloc] initWithFrame:CGRectMake(i * scrollView.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height) color:color bgColor:bgColor textColor:textColor];
         [scrollView addSubview:sContentView];
     }
     

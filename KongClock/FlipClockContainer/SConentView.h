@@ -12,7 +12,7 @@
 
 @property (nonatomic,strong) UIImageView * imgView;
 
-- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor;
+- (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *)bgColor textColor:(UIColor *)textColor;
 - (void)imageOffset;
 
 @end

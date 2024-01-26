@@ -35,15 +35,17 @@
 @property (nonatomic, assign) NSInteger originNumber;
 @property (nonatomic, assign) NSInteger number;
 @property (nonatomic, strong) UIColor *color;
+@property (nonatomic, strong) UIColor *textColor;
 
 @end
 
 @implementation FlipClockItemView
 
-- (instancetype)initWithFrame:(CGRect)frame color:(nonnull UIColor *)color {
+- (instancetype)initWithFrame:(CGRect)frame color:(nonnull UIColor *)color textColor:(UIColor *)textColor {
     if (self = [super initWithFrame:frame]) {
         self.number = -1;
         self.color = color;
+        self.textColor = textColor;
         [self setUpUI];
     }
     return self;
@@ -122,7 +124,7 @@
 #pragma - Getter
 - (HalfTransparentLabel *)wholeItemView {
     if (!_wholeItemView) {
-        _wholeItemView = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Whole color:self.color];
+        _wholeItemView = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Whole color:self.color textColor:self.textColor];
 //        _wholeItemView = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Whole color:[UIColor colorWithRed:240/255.f green:248/255.f blue:255/255.f alpha:1]];
     }
     return _wholeItemView;
@@ -130,7 +132,7 @@
 
 - (HalfTransparentLabel *)halfItemViewA {
     if (!_halfItemViewA) {
-        _halfItemViewA = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Top color:self.color];
+        _halfItemViewA = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Top color:self.color textColor:self.textColor];
 //        _halfItemViewA = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Top color:[UIColor colorWithRed:240/255.f green:248/255.f blue:255/255.f alpha:1]];
 //        CATransform3D t = CATransform3DIdentity;
 //        t.m34 = -1.0/500.0;
@@ -142,7 +144,7 @@
 
 - (HalfTransparentLabel *)halfItemViewB {
     if (!_halfItemViewB) {
-        _halfItemViewB = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:self.color];
+        _halfItemViewB = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:self.color textColor:self.textColor];
 //        _halfItemViewB = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:[UIColor colorWithRed:240/255.f green:248/255.f blue:255/255.f alpha:1]];
     }
     return _halfItemViewB;
@@ -150,7 +152,7 @@
 
 - (HalfTransparentLabel *)halfItemViewC {
     if (!_halfItemViewC) {
-        _halfItemViewC = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:self.color];
+        _halfItemViewC = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:self.color textColor:self.textColor];
 //        _halfItemViewC = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:[UIColor colorWithRed:240/255.f green:248/255.f blue:255/255.f alpha:1]];
 //        CATransform3D t = CATransform3DIdentity;
 //        t.m34 = -1.0/500.0;
