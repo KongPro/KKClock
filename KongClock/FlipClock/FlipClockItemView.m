@@ -79,7 +79,7 @@
         [self startAnimA];
         [self startAnimC];
     }
-    [self performSelector:@selector(initializeABC) withObject:nil afterDelay:AnimDurationAfterDelay];
+    [self performSelector:@selector(initializeABC) withObject:nil afterDelay:AnimDurationAfterDelay inModes:@[NSRunLoopCommonModes]];
 }
 
 #pragma - Animation

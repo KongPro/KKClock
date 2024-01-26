@@ -19,7 +19,6 @@
 @implementation KBannerViewFollow
 
 - (void)setUpBannerViewWithImageArr:(NSArray *)imageArray{
-    
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     scrollView.delegate = self;
     CGFloat contentWidth = imageArray.count ? self.frame.size.width * imageArray.count : self.frame.size.width;
@@ -53,14 +52,9 @@
     // 创建多个图片view
     for (int i = 0; i < count; i++) {
         UIColor *color = i % 2 ? [UIColor systemRedColor] : [UIColor systemBlueColor];
-        UIColor *bgColor = i % 2 ? [UIColor colorWithRed:135/255.f green:206/255.f blue:255/255.f alpha:0.5] : [UIColor colorWithRed:255/255.f green:106/255.f blue:106/255.f alpha:0.5];
+        UIColor *bgColor = i % 2 ? [UIColor colorWithRed:238/255.f green:154/255.f blue:0/255.f alpha:1] : [UIColor colorWithRed:176/255.f green:48/255.f blue:96/255.f alpha:1];
 
         SConentView *sContentView = [[SConentView alloc] initWithFrame:CGRectMake(i * scrollView.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height) color:color bgColor:bgColor];
-        if (!count) {
-            sContentView.backgroundColor = [UIColor lightGrayColor];
-        }else{
-            sContentView.backgroundColor = color;
-        }
         [scrollView addSubview:sContentView];
     }
     
