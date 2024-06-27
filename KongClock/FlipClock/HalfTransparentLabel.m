@@ -6,6 +6,7 @@
 //
 
 #import "HalfTransparentLabel.h"
+#import "UIFont+Clock.h"
 
 @interface HalfTransparentLabel()
 
@@ -25,7 +26,8 @@
         self.color = color;
         self.textColor = textColor;
         self.textAlignment = NSTextAlignmentCenter;
-        [self setFont:[UIFont fontWithName:@"AvenirNext-DemiBold" size:100]];
+//        [self setFont:[UIFont fontWithName:@"AvenirNext-DemiBold" size:100]];
+        [self setFont:[UIFont clock_defaultFontWithSize:100]];
 //        [self setTextColor:[UIColor colorWithRed:66/255.f green:66/255.f blue:66/255.f alpha:1]];
     }
     return self;

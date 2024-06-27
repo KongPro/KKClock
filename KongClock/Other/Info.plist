@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DS-Digital-Bold-Mono.ttf</string>
+		<string>KeepDisplay-Bold.otf</string>
+		<string>UnicaOne-Regular.ttf</string>
+		<string>KeepSans-Regular.otf</string>
+		<string>Keeprun_font_mac.ttf</string>
+		<string>KeepDisplay-Regular.otf</string>
+		<string>KeepNewFont-Regular.ttf</string>
+	</array>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>请允许app访问蓝牙</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>

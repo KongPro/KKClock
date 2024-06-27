@@ -11,6 +11,14 @@
 		0A486F852B5121360009F52F /* JXTSlideClipLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F842B5121360009F52F /* JXTSlideClipLabel.m */; };
 		0A486F8D2B5153E20009F52F /* KBannerViewFollow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F892B5153E20009F52F /* KBannerViewFollow.m */; };
 		0A486F8E2B5153E20009F52F /* SConentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A486F8A2B5153E20009F52F /* SConentView.m */; };
+		0A51FB7E2C2D751C00A44EA0 /* UnicaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A51FB7D2C2D751C00A44EA0 /* UnicaOne-Regular.ttf */; };
+		0A51FB802C2D774400A44EA0 /* KeepSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A51FB7F2C2D774400A44EA0 /* KeepSans-Regular.otf */; };
+		0A51FB822C2D778A00A44EA0 /* Keeprun_font_mac.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A51FB812C2D778A00A44EA0 /* Keeprun_font_mac.ttf */; };
+		0A51FB842C2D77B700A44EA0 /* KeepDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A51FB832C2D77B700A44EA0 /* KeepDisplay-Regular.otf */; };
+		0A51FB862C2D783200A44EA0 /* KeepNewFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A51FB852C2D783200A44EA0 /* KeepNewFont-Regular.ttf */; };
+		0A56EA122C2D5DED00F2A6D9 /* UIFont+Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A56EA112C2D5DED00F2A6D9 /* UIFont+Clock.m */; };
+		0A56EA262C2D6EB900F2A6D9 /* DS-Digital-Bold-Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A56EA252C2D6EB900F2A6D9 /* DS-Digital-Bold-Mono.ttf */; };
+		0A684CF32C2D74490090A222 /* Oxanium-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A684CF22C2D74490090A222 /* Oxanium-SemiBold.ttf */; };
 		0A7C0F152ADA79770082AF4A /* FlipClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F142ADA79770082AF4A /* FlipClockView.m */; };
 		0A7C0F182ADA798C0082AF4A /* FlipClockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F172ADA798C0082AF4A /* FlipClockItemView.m */; };
 		0A7C0F1B2ADA7FAC0082AF4A /* FlipClockSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C0F1A2ADA7FAC0082AF4A /* FlipClockSectionView.m */; };
@@ -38,6 +46,15 @@
 		0A486F8A2B5153E20009F52F /* SConentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SConentView.m; sourceTree = "<group>"; };
 		0A486F8B2B5153E20009F52F /* KBannerViewFollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBannerViewFollow.h; sourceTree = "<group>"; };
 		0A486F8C2B5153E20009F52F /* SConentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SConentView.h; sourceTree = "<group>"; };
+		0A51FB7D2C2D751C00A44EA0 /* UnicaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UnicaOne-Regular.ttf"; sourceTree = "<group>"; };
+		0A51FB7F2C2D774400A44EA0 /* KeepSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepSans-Regular.otf"; sourceTree = "<group>"; };
+		0A51FB812C2D778A00A44EA0 /* Keeprun_font_mac.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Keeprun_font_mac.ttf; sourceTree = "<group>"; };
+		0A51FB832C2D77B700A44EA0 /* KeepDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepDisplay-Regular.otf"; sourceTree = "<group>"; };
+		0A51FB852C2D783200A44EA0 /* KeepNewFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepNewFont-Regular.ttf"; sourceTree = "<group>"; };
+		0A56EA102C2D5DED00F2A6D9 /* UIFont+Clock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Clock.h"; sourceTree = "<group>"; };
+		0A56EA112C2D5DED00F2A6D9 /* UIFont+Clock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Clock.m"; sourceTree = "<group>"; };
+		0A56EA252C2D6EB900F2A6D9 /* DS-Digital-Bold-Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-Digital-Bold-Mono.ttf"; sourceTree = "<group>"; };
+		0A684CF22C2D74490090A222 /* Oxanium-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxanium-SemiBold.ttf"; sourceTree = "<group>"; };
 		0A7C0F132ADA79770082AF4A /* FlipClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockView.h; sourceTree = "<group>"; };
 		0A7C0F142ADA79770082AF4A /* FlipClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockView.m; sourceTree = "<group>"; };
 		0A7C0F162ADA798C0082AF4A /* FlipClockItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockItemView.h; sourceTree = "<group>"; };
@@ -97,12 +114,19 @@
 		0A486F872B51514A0009F52F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0A51FB852C2D783200A44EA0 /* KeepNewFont-Regular.ttf */,
+				0A51FB832C2D77B700A44EA0 /* KeepDisplay-Regular.otf */,
+				0A51FB812C2D778A00A44EA0 /* Keeprun_font_mac.ttf */,
+				0A51FB7F2C2D774400A44EA0 /* KeepSans-Regular.otf */,
+				0A51FB7D2C2D751C00A44EA0 /* UnicaOne-Regular.ttf */,
+				0A684CF22C2D74490090A222 /* Oxanium-SemiBold.ttf */,
+				0A56EA252C2D6EB900F2A6D9 /* DS-Digital-Bold-Mono.ttf */,
+				0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */,
 				0AC45E2E2AD4269900E9C3E9 /* AppDelegate.h */,
 				0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */,
 				0AC45E342AD4269900E9C3E9 /* ViewController.h */,
 				0AC45E352AD4269900E9C3E9 /* ViewController.m */,
 				0AC45E372AD4269900E9C3E9 /* Main.storyboard */,
-				0AC45E3A2AD4269B00E9C3E9 /* Assets.xcassets */,
 				0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */,
 				0AC45E3F2AD4269B00E9C3E9 /* Info.plist */,
 				0AC45E402AD4269B00E9C3E9 /* main.m */,
@@ -119,6 +143,15 @@
 				0A486F8A2B5153E20009F52F /* SConentView.m */,
 			);
 			path = FlipClockContainer;
+			sourceTree = "<group>";
+		};
+		0A56EA0F2C2D5D9900F2A6D9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0A56EA102C2D5DED00F2A6D9 /* UIFont+Clock.h */,
+				0A56EA112C2D5DED00F2A6D9 /* UIFont+Clock.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		0A7C0F122ADA794E0082AF4A /* FlipClock */ = {
@@ -181,6 +214,7 @@
 		0AC45E2D2AD4269900E9C3E9 /* KongClock */ = {
 			isa = PBXGroup;
 			children = (
+				0A56EA0F2C2D5D9900F2A6D9 /* Tools */,
 				0A486F882B5152EE0009F52F /* FlipClockContainer */,
 				0A7C0F122ADA794E0082AF4A /* FlipClock */,
 				0AA8EE342AD7D45A0061C0CF /* ClockSkin */,
@@ -267,8 +301,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A51FB822C2D778A00A44EA0 /* Keeprun_font_mac.ttf in Resources */,
 				0AC45E3E2AD4269B00E9C3E9 /* LaunchScreen.storyboard in Resources */,
+				0A51FB842C2D77B700A44EA0 /* KeepDisplay-Regular.otf in Resources */,
+				0A51FB802C2D774400A44EA0 /* KeepSans-Regular.otf in Resources */,
+				0A51FB862C2D783200A44EA0 /* KeepNewFont-Regular.ttf in Resources */,
+				0A684CF32C2D74490090A222 /* Oxanium-SemiBold.ttf in Resources */,
 				0AC45E3B2AD4269B00E9C3E9 /* Assets.xcassets in Resources */,
+				0A51FB7E2C2D751C00A44EA0 /* UnicaOne-Regular.ttf in Resources */,
+				0A56EA262C2D6EB900F2A6D9 /* DS-Digital-Bold-Mono.ttf in Resources */,
 				0AC45E392AD4269900E9C3E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +372,7 @@
 				0A486F852B5121360009F52F /* JXTSlideClipLabel.m in Sources */,
 				0AC45E302AD4269900E9C3E9 /* AppDelegate.m in Sources */,
 				0AC45E412AD4269B00E9C3E9 /* main.m in Sources */,
+				0A56EA122C2D5DED00F2A6D9 /* UIFont+Clock.m in Sources */,
 				0AA449EC2AD665200018DB93 /* KKClockView.m in Sources */,
 				0AC45E492AD4E84400E9C3E9 /* TimeView.m in Sources */,
 				0AA449F12AD669660018DB93 /* KKSkinView.m in Sources */,

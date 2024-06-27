@@ -37,6 +37,18 @@
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, strong) UIColor *textColor;
 
+
+@property (nonatomic, strong) UIView *wholeView;
+@property (nonatomic, strong) UIImageView *wholeImgTop;
+@property (nonatomic, strong) UIImageView *wholeImgBottom;
+
+
+@property (nonatomic, strong) UIView *halfViewA;
+@property (nonatomic, strong) UIImageView *halfImgA;
+@property (nonatomic, strong) UIView *halfViewB;
+@property (nonatomic, strong) UIImageView *halfImgB;
+@property (nonatomic, strong) UIView *halfViewC;
+
 @end
 
 @implementation FlipClockItemView
@@ -161,6 +173,42 @@
 //        [_halfItemViewC initRotate];
     }
     return _halfItemViewC;
+}
+
+- (UIView *)wholeView {
+    if (!_wholeView) {
+        _wholeView = [[UIView alloc] init];
+    }
+    return _wholeView;
+}
+
+- (UIImageView *)wholeImgTop {
+    if (!_wholeImgTop) {
+        
+    }
+    return _wholeImgTop;
+}
+
+
+- (UIView *)halfViewA {
+    if (!_halfViewA) {
+        _halfViewA = [[UIView alloc] init];
+    }
+    return _halfViewA;
+}
+
+- (UIView *)halfViewB {
+    if (!_halfViewB) {
+        _halfViewB = [[UIView alloc] init];
+    }
+    return _halfViewB;
+}
+
+- (UIView *)halfViewC {
+    if (!_halfViewC) {
+        _halfViewC = [[UIView alloc] init];
+    }
+    return _halfViewC;
 }
 
 

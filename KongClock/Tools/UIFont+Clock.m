@@ -9,4 +9,12 @@
 
 @implementation UIFont (Clock)
 
++ (UIFont *)clock_defaultFontWithSize:(CGFloat)fontSize {
+    UIFont *font = [UIFont fontWithName:@"KeepDisplay-Regular" size:fontSize];
+    if (font) {
+        return font;
+    }
+    return [UIFont systemFontOfSize:fontSize];
+}
+
 @end
