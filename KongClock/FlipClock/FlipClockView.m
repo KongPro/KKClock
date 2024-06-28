@@ -39,6 +39,7 @@
     [self addSubview:self.minSection];
     [self addSubview:self.secSection];
     self.backgroundColor = self.bgColor;
+//    self.backgroundColor = [UIColor whiteColor];
     
     CGFloat margin = 55;
     CGFloat h = ([UIScreen mainScreen].bounds.size.height - (240 + margin + margin)) / 3;

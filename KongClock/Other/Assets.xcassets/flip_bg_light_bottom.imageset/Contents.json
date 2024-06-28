@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "flip_bg-light_bottom.png",
+      "filename" : "flip_bg_light_bottom.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "flip_bg-light_bottom@2x.png",
+      "filename" : "flip_bg_light_bottom@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
