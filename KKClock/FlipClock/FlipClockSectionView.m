@@ -132,14 +132,14 @@
 
 - (FlipClockItemView *)itemLeft {
     if (!_itemLeft) {
-        _itemLeft = [[FlipClockItemView alloc] initWithFrame:CGRectZero color:self.color textColor:self.textColor];
+        _itemLeft = [[FlipClockItemView alloc] initWithFrame:CGRectMake(0, 0, KKCLOCKITEMSIZE_WIDTH, KKCLOCKITEMSIZE_HEIGHT) color:self.color textColor:self.textColor];
     }
     return _itemLeft;
 }
 
 - (FlipClockItemView *)itemRight {
     if (!_itemRight) {
-        _itemRight = [[FlipClockItemView alloc] initWithFrame:CGRectZero color:self.color textColor:self.textColor];
+        _itemRight = [[FlipClockItemView alloc] initWithFrame:CGRectMake(0, 0, KKCLOCKITEMSIZE_WIDTH, KKCLOCKITEMSIZE_HEIGHT) color:self.color textColor:self.textColor];
     }
     return _itemRight;
 }

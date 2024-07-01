@@ -69,7 +69,7 @@
 		0AA8EE2F2AD7D2190061C0CF /* KKClockContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKClockContentView.m; sourceTree = "<group>"; };
 		0AA8EE312AD7D4190061C0CF /* KKClockCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKClockCollectionViewCell.h; sourceTree = "<group>"; };
 		0AA8EE322AD7D4190061C0CF /* KKClockCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKClockCollectionViewCell.m; sourceTree = "<group>"; };
-		0AC45E2B2AD4269900E9C3E9 /* KongClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KongClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC45E2B2AD4269900E9C3E9 /* KKClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC45E2E2AD4269900E9C3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AC45E2F2AD4269900E9C3E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0AC45E342AD4269900E9C3E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -83,6 +83,8 @@
 		0AC45E482AD4E84400E9C3E9 /* TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeView.h; sourceTree = "<group>"; };
 		0AC7AC1A2B4E428900B48A02 /* HalfTransparentLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfTransparentLabel.h; sourceTree = "<group>"; };
 		0AC7AC1B2B4E428900B48A02 /* HalfTransparentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfTransparentLabel.m; sourceTree = "<group>"; };
+		0AE637652C3254C60002FDC0 /* KKClockDefind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKClockDefind.h; sourceTree = "<group>"; };
+		0AE637662C3255A70002FDC0 /* KKClock.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKClock.pch; sourceTree = "<group>"; };
 		6F5D1990FEB31AE745CC8DA4 /* Pods-KongClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KongClock.release.xcconfig"; path = "Target Support Files/Pods-KongClock/Pods-KongClock.release.xcconfig"; sourceTree = "<group>"; };
 		96609AD4204A15AA1B6ECBE1 /* Pods_KongClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KongClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF9208B26C54FA073CA519C /* Pods-KongClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KongClock.debug.xcconfig"; path = "Target Support Files/Pods-KongClock/Pods-KongClock.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				0AC45E3C2AD4269B00E9C3E9 /* LaunchScreen.storyboard */,
 				0AC45E3F2AD4269B00E9C3E9 /* Info.plist */,
 				0AC45E402AD4269B00E9C3E9 /* main.m */,
+				0AE637662C3255A70002FDC0 /* KKClock.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			children = (
 				0A56EA102C2D5DED00F2A6D9 /* UIFont+Clock.h */,
 				0A56EA112C2D5DED00F2A6D9 /* UIFont+Clock.m */,
+				0AE637652C3254C60002FDC0 /* KKClockDefind.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -196,7 +200,7 @@
 		0AC45E222AD4269900E9C3E9 = {
 			isa = PBXGroup;
 			children = (
-				0AC45E2D2AD4269900E9C3E9 /* KongClock */,
+				0AC45E2D2AD4269900E9C3E9 /* KKClock */,
 				0AC45E2C2AD4269900E9C3E9 /* Products */,
 				B30775870912584D592D866E /* Pods */,
 				D205518E5D4EDBB1B6ADFBDE /* Frameworks */,
@@ -206,12 +210,12 @@
 		0AC45E2C2AD4269900E9C3E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AC45E2B2AD4269900E9C3E9 /* KongClock.app */,
+				0AC45E2B2AD4269900E9C3E9 /* KKClock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AC45E2D2AD4269900E9C3E9 /* KongClock */ = {
+		0AC45E2D2AD4269900E9C3E9 /* KKClock */ = {
 			isa = PBXGroup;
 			children = (
 				0A56EA0F2C2D5D9900F2A6D9 /* Tools */,
@@ -222,7 +226,7 @@
 				0A486F872B51514A0009F52F /* Other */,
 				0A486F862B514B0C0009F52F /* OtherTest */,
 			);
-			path = KongClock;
+			path = KKClock;
 			sourceTree = "<group>";
 		};
 		B30775870912584D592D866E /* Pods */ = {
@@ -245,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AC45E2A2AD4269900E9C3E9 /* KongClock */ = {
+		0AC45E2A2AD4269900E9C3E9 /* KKClock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AC45E442AD4269B00E9C3E9 /* Build configuration list for PBXNativeTarget "KongClock" */;
+			buildConfigurationList = 0AC45E442AD4269B00E9C3E9 /* Build configuration list for PBXNativeTarget "KKClock" */;
 			buildPhases = (
 				546F6ACF72F2F396B3DDBAB0 /* [CP] Check Pods Manifest.lock */,
 				0AC45E272AD4269900E9C3E9 /* Sources */,
@@ -259,9 +263,9 @@
 			);
 			dependencies = (
 			);
-			name = KongClock;
+			name = KKClock;
 			productName = KongClock;
-			productReference = 0AC45E2B2AD4269900E9C3E9 /* KongClock.app */;
+			productReference = 0AC45E2B2AD4269900E9C3E9 /* KKClock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +282,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AC45E262AD4269900E9C3E9 /* Build configuration list for PBXProject "KongClock" */;
+			buildConfigurationList = 0AC45E262AD4269900E9C3E9 /* Build configuration list for PBXProject "KKClock" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -291,7 +295,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AC45E2A2AD4269900E9C3E9 /* KongClock */,
+				0AC45E2A2AD4269900E9C3E9 /* KKClock */,
 			);
 		};
 /* End PBXProject section */
@@ -531,8 +535,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DDSTX9CCK2;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KKClock/Other/KKClock.pch";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KongClock/Other/Info.plist;
+				INFOPLIST_FILE = KKClock/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -561,8 +567,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DDSTX9CCK2;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KKClock/Other/KKClock.pch";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KongClock/Other/Info.plist;
+				INFOPLIST_FILE = KKClock/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -584,7 +592,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AC45E262AD4269900E9C3E9 /* Build configuration list for PBXProject "KongClock" */ = {
+		0AC45E262AD4269900E9C3E9 /* Build configuration list for PBXProject "KKClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AC45E422AD4269B00E9C3E9 /* Debug */,
@@ -593,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AC45E442AD4269B00E9C3E9 /* Build configuration list for PBXNativeTarget "KongClock" */ = {
+		0AC45E442AD4269B00E9C3E9 /* Build configuration list for PBXNativeTarget "KKClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AC45E452AD4269B00E9C3E9 /* Debug */,
