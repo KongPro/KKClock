@@ -164,9 +164,6 @@
         make.centerX.equalTo(self.halfViewC);
         make.size.mas_equalTo(KITEMSIZE);
     }];
-    
-    self.wholeView.backgroundColor = [UIColor redColor];
-//    self.wholeViewB.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
 }
 
 - (void)updateContentWithNumber:(NSInteger)number shoudlAnim:(BOOL)anim {
