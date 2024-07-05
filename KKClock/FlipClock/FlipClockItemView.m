@@ -132,8 +132,10 @@
         make.top.equalTo(self.wholeViewB.mas_centerY);
     }];
     [self.halfViewC mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.bottom.trailing.equalTo(self.wholeViewC);
-        make.top.equalTo(self.wholeViewC.mas_centerY);
+        make.top.leading.trailing.equalTo(self.wholeViewC);
+        make.bottom.equalTo(self.wholeViewC.mas_centerY);
+//        make.leading.bottom.trailing.equalTo(self.wholeViewC);
+//        make.top.equalTo(self.wholeViewC.mas_centerY);
     }];
     
     
@@ -160,19 +162,24 @@
         make.size.mas_equalTo(KITEMSIZE);
     }];
     [self.halfLblC mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.halfViewC);
+        make.top.equalTo(self.halfViewC);
         make.centerX.equalTo(self.halfViewC);
         make.size.mas_equalTo(KITEMSIZE);
+//        make.bottom.equalTo(self.halfViewC);
+//        make.centerX.equalTo(self.halfViewC);
+//        make.size.mas_equalTo(KITEMSIZE);
     }];
+    self.wholeView.backgroundColor = [[UIColor systemRedColor] colorWithAlphaComponent:0.5];
+    self.wholeViewB.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5];
 }
 
 - (void)updateContentWithNumber:(NSInteger)number shoudlAnim:(BOOL)anim {
+    [self performSelector:@selector(initializeABC) withObject:nil afterDelay:AnimDurationAfterDelay inModes:@[NSRunLoopCommonModes]];
     if (self.number != number) {
         self.number = number;
         [self startAnimA];
         [self startAnimC];
     }
-    [self performSelector:@selector(initializeABC) withObject:nil afterDelay:AnimDurationAfterDelay inModes:@[NSRunLoopCommonModes]];
 }
 
 #pragma - Animation
@@ -188,8 +195,10 @@
 
 - (void)startAnimC {
     CABasicAnimation *anim1 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
-    anim1.fromValue = @(M_PI);
+    anim1.fromValue = @(0.0);
     anim1.byValue = @(-M_PI);
+//    anim1.fromValue = @(M_PI);
+//    anim1.byValue = @(-M_PI);
     anim1.duration = AnimDuration_ADD;
 //    [self.halfItemViewC.layer addAnimation:anim1 forKey:@"anim2"];
     [self.wholeViewC.layer addAnimation:anim1 forKey:@"anim2"];
@@ -207,7 +216,7 @@
     self.wholeViewA.alpha = 1;
     self.wholeViewB.alpha = 1;
     self.wholeViewC.alpha = 1;
-    [self bringSubviewToFront:self.halfViewB];
+//    [self bringSubviewToFront:self.halfViewB];
 }
 
 - (void)initializeABC {
@@ -218,7 +227,6 @@
     self.wholeViewA.alpha = 0;
     self.wholeViewB.alpha = 0;
     self.wholeViewC.alpha = 0;
-    
 }
 
 #pragma - Getter
@@ -250,7 +258,13 @@
 
 - (HalfTransparentLabel *)halfLblC {
     if (!_halfLblC) {
-        _halfLblC = [[HalfTransparentLabel alloc] initWithFrame:KITEMRECT type:FlipLabelShowType_Half_Bottom color:self.color textColor:self.textColor];
+        _halfLblC = [[HalfTransparentLabel alloc] initWithFrame:KITEMRECT type:FlipLabelShowType_Whole color:self.color textColor:self.textColor];
+        
+        CATransform3D rotationTransform = CATransform3DIdentity;
+        rotationTransform.m34 = -1.0 / 500.0; // 设置透视效果
+        rotationTransform = CATransform3DRotate(rotationTransform, M_PI, 1.0, 0.0, 0.0); // 绕 x 轴旋转 180 度
+        _halfLblC.layer.transform = rotationTransform;
+//        _halfLblC.transform = CGAffineTransformRotate(_halfImgC.transform, -M_PI);
 //        _halfItemViewC = [[HalfTransparentLabel alloc] initWithFrame:kItemRect type:FlipLabelShowType_Half_Bottom color:[UIColor colorWithRed:240/255.f green:248/255.f blue:255/255.f alpha:1]];
 //        CATransform3D t = CATransform3DIdentity;
 //        t.m34 = -1.0/500.0;
@@ -319,7 +333,7 @@
 }
 - (UIImageView *)halfImgC {
     if (!_halfImgC) {
-        _halfImgC = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"flip_bg_light_bottom"]];
+        _halfImgC = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"flip_bg_light_top"]];
     }
     return _halfImgC;
 }

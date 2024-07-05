@@ -8,7 +8,7 @@
 #ifndef KKClockDefind_h
 #define KKClockDefind_h
 
-#define AnimDuration (0.3)
+#define AnimDuration (0.5)
 #define AnimDuration_ADD (AnimDuration + 0.01)
 #define AnimDurationAfterDelay (AnimDuration - 0.1)
 
