@@ -170,7 +170,8 @@
 //        make.size.mas_equalTo(KITEMSIZE);
     }];
     self.wholeView.backgroundColor = [[UIColor systemRedColor] colorWithAlphaComponent:0.5];
-    self.wholeViewB.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5];
+    self.halfViewB.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5];
+    self.halfImgB.alpha = 0.4;
 }
 
 - (void)updateContentWithNumber:(NSInteger)number shoudlAnim:(BOOL)anim {
@@ -189,6 +190,9 @@
     anim1.byValue = @(-M_PI);
     anim1.duration = AnimDuration;
     anim1.delegate = self;
+    anim1.removedOnCompletion = NO;
+    anim1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+
 //    [self.halfItemViewA.layer addAnimation:anim1 forKey:@"anim1"];
     [self.wholeViewA.layer addAnimation:anim1 forKey:@"anim1"];
 }
@@ -200,11 +204,17 @@
 //    anim1.fromValue = @(M_PI);
 //    anim1.byValue = @(-M_PI);
     anim1.duration = AnimDuration_ADD;
+    anim1.removedOnCompletion = NO;
+    anim1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+
 //    [self.halfItemViewC.layer addAnimation:anim1 forKey:@"anim2"];
     [self.wholeViewC.layer addAnimation:anim1 forKey:@"anim2"];
 }
 
 - (void)animationDidStart:(CAAnimation *)anim {
+    if (anim valueForKey:<#(nonnull NSString *)#>) {
+        <#statements#>
+    }
     self.halfLblA.text = [NSString stringWithFormat:@"%zd", self.originNumber];
     self.halfLblB.text = [NSString stringWithFormat:@"%zd", self.originNumber];
     self.halfLblC.text = [NSString stringWithFormat:@"%zd", self.number];
